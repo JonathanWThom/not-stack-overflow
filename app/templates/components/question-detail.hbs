@@ -1,4 +1,8 @@
 <h3>Author: {{question.author}}</h3>
 <h3>Question: {{question.content}}</h3>
 <h3>Additional Notes: {{question.notes}}</h3>
+
+{{#each question.answers as |answer|}}
+  {{answer-tile answer=answer}}
+{{/each}}
 {{edit-question question=question updateQuestion="updateQuestion"}}
