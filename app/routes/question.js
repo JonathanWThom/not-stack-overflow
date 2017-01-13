@@ -32,6 +32,9 @@ export default Ember.Route.extend({
         return question.destroyRecord();
       });
       this.transitionTo('index');
+    },
+    upvote(answer) {
+      answer.incrementProperty('votes');
     }
   }
 });
