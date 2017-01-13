@@ -4,6 +4,6 @@
 <button {{action 'deleteQuestion' question}}>Delete Question</button>
 
 {{#each question.answers as |answer|}}
-  {{answer-tile answer=answer upvote="upvote"}}
+  {{answer-tile answer=answer upvote="upvote" downvote="downvote"}}
 {{/each}}
 {{edit-question question=question updateQuestion="updateQuestion"}}
