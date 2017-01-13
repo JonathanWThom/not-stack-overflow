@@ -1,7 +1,13 @@
 <div class="answer">
-  <p>Answer: {{answer.content}}</p>
-  <p class='author'>Author: {{answer.author}}</p>
-  <h3>Votes: {{answer.votes}}</h3>
-  <button {{action 'upvote' answer}}>Upvote</button>
-  <button {{action 'downvote' answer}}>Downvote</button>
+  <div class="row">
+    <div class="col s2">
+      <i class="material-icons" {{action 'upvote' answer}}>thumb_up</i>
+      <h6 class='votes'>{{answer.votes}}</h6>
+      <i class="material-icons" {{action 'downvote' answer}}>thumb_down</i>
+    </div>
+    <div class="col s10">
+      <p>Answer: {{answer.content}}</p>
+      <p class='author'>Author: {{answer.author}}</p>
+    </div>
+  </div>
 </div>
