@@ -2,7 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('question', params.question_id);
+    return Ember.RSVP.hash({
+      question: this.store.findRecord('question', params.question_id),
+      answers: this.store.query('answer', {  question: params.question_id })
+    });
+
   },
 
   actions: {
@@ -22,7 +26,7 @@ export default Ember.Route.extend({
       newAnswer.save().then(function() {
         return question.save();
       });
-      this.transitionTo('question', question);
+      this.transitionTo('question', question.id);
     },
     deleteQuestion(question) {
       var answer_deletions = question.get('answers').map(function(answer) {
