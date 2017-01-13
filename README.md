@@ -1,7 +1,14 @@
-# not-stack-overflow
+# Definitely Not Stack Overflow
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _An application for asking questions and getting answers about computer programming. 1.13.16_
+
+#### By _**Jonathan Thom**_
+
+## Description
+
+Users can enter questions, as well as supply answers to other users. There is upvote/downvote functionality, as well as a search-by-category function, and update/deletion methods for questions.
+
+You must create your own Firebase database to run this application. See "Installation" below.
 
 ## Prerequisites
 
@@ -15,38 +22,28 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/JonathanWThom/not-stack-overflow`
 * `cd not-stack-overflow`
 * `npm install`
 * `bower install`
 
 ## Running / Development
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Navigate to [https://console.firebase.google.com/](https://console.firebase.google.com/) and create a new project.
+* Click "Add Firebase to Web App" and copy the given information into the firebase object in this program's config/environment.js file.
+* In the command line, run: `ember serve`
+* Navigate to [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+## Support and Contact Details
 
-Make use of the many generators for code, try `ember help generate` for more details
+_Contact Jonathan at: jonathan.thom1990@gmail.com_
 
-### Running Tests
+## Technologies Used
 
-* `ember test`
-* `ember test --server`
+_JavaScript (Ember.js), CSS, HTML, Firebase_
 
-### Building
+### License
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+*MIT*
 
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+Copyright (c) 2016 **_Jonathan Thom_**
