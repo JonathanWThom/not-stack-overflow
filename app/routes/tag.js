@@ -2,6 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findAll('question', { tag: params.name});
+    return this.store.query('question', {
+      tag: params.name
+    });
   }
 });

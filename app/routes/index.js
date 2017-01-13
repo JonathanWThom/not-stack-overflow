@@ -12,8 +12,7 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     searchTag(params) {
-      console.log(params.name);
-      this.transitionTo('tag', params.name)
+      this.transitionTo('tag', params.name);
     }
   }
 });
