@@ -1,5 +1,11 @@
-{{#each model as |question|}}
-  <div>
-    {{tagged-question question=question}}
-  </div>
-{{/each}}
+{{#if model}}
+  <h5>Questions Matching Search</h5>
+  {{#each model as |question|}}
+    <div>
+      {{question-tile question=question}}
+    </div>
+  {{/each}}
+{{else}}
+  <h5>No matches for that category</h5>
+  <h5>{{#link-to 'index'}}Return Home{{/link-to}}</h5>
+{{/if}}
