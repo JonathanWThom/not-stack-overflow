@@ -42,3 +42,7 @@
 .brand-logo.left-align {
   padding-left: 15px;
 }
+
+.brand-logo a:hover {
+  color: #0095ff;
+}

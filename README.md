@@ -31,6 +31,16 @@ You will need the following things properly installed on your computer.
 
 * Navigate to [https://console.firebase.google.com/](https://console.firebase.google.com/) and create a new project.
 * Click "Add Firebase to Web App" and copy the given information into the firebase object in this program's config/environment.js file.
+* In your Firebase Database > Rules, paste and save as public: 
+
+```
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+```
 * In the command line, run: `ember serve`
 * Navigate to [http://localhost:4200](http://localhost:4200).
 
