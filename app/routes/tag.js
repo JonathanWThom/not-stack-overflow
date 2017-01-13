@@ -2,8 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.query('question', {
-      tag: params.name
-    });
+    var promise = this.store.findAll('question').then( function( questionsArray ) {
+          return questionsArray.filter( function( item, index, enumerable) {
+             return item.get('tag') === params.name;
+          });
+       })
+
+       return DS.PromiseArray.create({
+          promise: promise
+       });
   }
 });
