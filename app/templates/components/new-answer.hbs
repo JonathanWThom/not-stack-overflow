@@ -1,5 +1,5 @@
 {{#if addNewAnswer}}
-  <h3>Add Answer</h3>
+  <h3>Your Answer</h3>
   <form>
     <div class="input-field">
       {{input value=author id="author" placeholder="Author"}}
@@ -7,8 +7,9 @@
     <div class="input-field">
       {{input value=content id="content" placeholder="Your Answer Here"}}
     </div>
-    <button {{action 'saveAnswer'}}>Answer!</button>
+    <button class="btn"{{action 'saveAnswer'}}>Answer!</button>
   </form>
 {{else}}
-  <button {{action 'answerFormShow'}}>Add an Answer</button>
+  <button class=
+  "btn" {{action 'answerFormShow'}}>Your Answer</button>
 {{/if}}

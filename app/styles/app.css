@@ -1,6 +1,12 @@
-.question, .answer {
+.question {
   border-top: 0.5px solid #C9C9C9;
   margin-bottom: 25px;
+}
+
+.answer {
+  border-top: 0.5px solid #C9C9C9;
+  margin-bottom: 25px;
+  padding-top: 10px;
 }
 
 .category {
@@ -10,4 +16,17 @@
 
 .author {
   text-align: right;
+}
+
+.question-detail {
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: #0095ff;
+  border-color: #07c;
+}
+
+.btn:hover {
+  background-color: #0068b3;
 }

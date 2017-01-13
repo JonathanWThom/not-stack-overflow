@@ -13,8 +13,8 @@
     <div class="input-field">
       {{input value=tag id="tag" placeholder=question.tag}}
     </div>
-    <button {{action 'updateQuestion' question}}>Submit Edit</button>
+    <button class="btn" {{action 'updateQuestion' question}}>Submit Edit</button>
   </form>
 {{else}}
-  <button {{action 'updateQuestionForm'}}>Edit Question</button>
+  <button class="btn" {{action 'updateQuestionForm'}}>Edit Question</button>
 {{/if}}
