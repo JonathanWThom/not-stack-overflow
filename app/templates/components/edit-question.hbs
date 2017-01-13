@@ -10,6 +10,9 @@
     <div class="input-field">
       {{input value=notes id="notes" placeholder=question.notes}}
     </div>
+    <div class="input-field">
+      {{input value=tag id="tag" placeholder=question.tag}}
+    </div>
     <button {{action 'updateQuestion' question}}>Submit Edit</button>
   </form>
 {{else}}
