@@ -1,1 +1,17 @@
-{{yield}}
+{{#if updateQuestionForm}}
+  <h3>Edit Question</h3>
+  <form>
+    <div class="input-field">
+      {{input value=author id="author" placeholder=question.author}}
+    </div>
+    <div class="input-field">
+      {{input value=content id="content" placeholder=question.content}}
+    </div>
+    <div class="input-field">
+      {{input value=notes id="notes" placeholder=question.notes}}
+    </div>
+    <button {{action 'updateQuestion' question}}>Submit Edit</button>
+  </form>
+{{else}}
+  <button {{action 'updateQuestionForm'}}>Edit Question</button>
+{{/if}}
