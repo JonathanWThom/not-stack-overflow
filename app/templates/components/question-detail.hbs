@@ -16,10 +16,11 @@
       <button class="btn" {{action 'deleteQuestion' question}}>Delete Question</button>
     </div>
   </div>
-
 </div>
 
-<h5>Answers</h5>
-{{#each question.sorted_answers as |answer|}}
-  {{answer-tile answer=answer upvote="upvote" downvote="downvote"}}
-{{/each}}
+<div class="row">
+  <h5>Answers</h5>
+  {{#each question.sorted_answers as |answer|}}
+    {{answer-tile answer=answer upvote="upvote" downvote="downvote"}}
+  {{/each}}
+</div>

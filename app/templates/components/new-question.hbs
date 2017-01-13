@@ -1,5 +1,5 @@
 {{#if addNewQuestion}}
-  <h3>New Question</h3>
+  <h6>New Question</h6>
   <form>
     <div class="input-field">
       {{input value=author id="author" placeholder="Your Name"}}
@@ -13,8 +13,8 @@
     <div class="input-field">
       {{input value=tag id="tag" placeholder="Tag"}}
     </div>
-    <button {{action 'saveQuestion'}}>Ask!</button>
+    <button class="btn"{{action 'saveQuestion'}}>Ask!</button>
   </form>
 {{else}}
-  <button {{action 'questionFormShow'}}>New Question</button>
+  <button class="btn"{{action 'questionFormShow'}}>New Question</button>
 {{/if}}
