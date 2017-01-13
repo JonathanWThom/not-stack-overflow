@@ -11,7 +11,7 @@ module.exports = function(environment) {
       apiKey: 'xyz',
       authDomain: 'YOUR-FIREBASE-APP.firebaseapp.com',
       databaseURL: 'https://YOUR-FIREBASE-APP.firebaseapp.com',
-      storageBucket: 'YOUR-FIREBASE-APP.appspot.com',
+      storageBucket: 'YOUR-FIREBASE-APP.appspot.com'
     },
 
     EmberENV: {
