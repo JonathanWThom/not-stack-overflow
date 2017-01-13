@@ -1,3 +1,5 @@
-{{question.author}}
-{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}
-{{#link-to 'tag' question.tag}}{{question.tag}}{{/link-to}}
+<div class="question">
+  <h5>{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</h5>
+  <p>{{question.author}}</p>
+  <span class='category'>{{#link-to 'tag' question.tag}}{{question.tag}}{{/link-to}}</span>
+</div>

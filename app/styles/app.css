@@ -1,0 +1,13 @@
+.question, .answer {
+  border-top: 0.5px solid #C9C9C9;
+  margin-bottom: 25px;
+}
+
+.category {
+  background-color: lightblue;
+  padding: 5px;
+}
+
+.author {
+  text-align: right;
+}
