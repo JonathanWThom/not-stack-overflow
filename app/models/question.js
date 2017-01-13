@@ -6,5 +6,6 @@ export default DS.Model.extend({
   notes: DS.attr(),
   answers: DS.hasMany('answer', { async: true}),
   sorting: ['votes:desc'],
-  sorted_answers: Ember.computed.sort('answers', 'sorting')
+  sorted_answers: Ember.computed.sort('answers', 'sorting'),
+  tags: DS.hasMany('tag', { async: true})
 });
